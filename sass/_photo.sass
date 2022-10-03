@@ -1,0 +1,37 @@
+.photo
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 2.5vw
+    &__img
+        width: 35%
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 65%
+        text-align: center
+        padding: 3vw 0 3vw 3vw
+        &.photo__text--left
+            padding: 3vw 3vw 3vw 0
+    &__picture
+        display: block
+        width: 100%
+    &__text-section
+        margin-bottom: 35px
+    &__text-section:last-child
+        margin-bottom: 0
+
+@media (max-width: 900px)
+    .photo
+        padding: 5vw 2.5vw
+        flex-wrap: wrap
+        &__img
+            width: 100%
+            margin-bottom: 20px
+        &__text
+            width: 100%
+            padding: 0
+            &.photo__text--left
+                padding: 0

@@ -1,0 +1,24 @@
+.boxes
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 20px
+    padding-top: 35px
+    &__box
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 340px
+        height: 195px
+        border: 1px solid black
+        border-radius: 26px
+        background-color: transparent
+    &__box-img.logo
+        position: relative
+        left: 10px
+        display: block
+        width: 250px
+
+@media (max-width: 800px)
+    .boxes
+        flex-wrap: wrap

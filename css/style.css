@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "Celias-Regular";
+  src: url("https://ccc-frontend.github.io/fonts/fonts/Celias-Regular.woff2");
+  format: "woff2";
+}
+@font-face {
+  font-family: "Celias-Medium";
+  src: url("https://ccc-frontend.github.io/fonts/fonts/Celias-Medium.woff2");
+  format: "woff2";
+}
+body {
+  margin: 0;
+}
+
+.main {
+  font-family: "Celias-Regular";
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: trnsparent;
+  padding-bottom: 5vw;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(240, 218, 190) 94%, rgb(238, 218, 192) 100%);
+}
+.main * {
+  padding: 0;
+  margin: 0;
+  font-family: "Celias-Regular";
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 8vw 2.5vw 10vw 2.5vw;
+}
+.header__left {
+  width: 25%;
+}
+.header__mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.header__img {
+  display: block;
+  width: 85%;
+}
+.header__img.header__img-smaller {
+  width: 60%;
+}
+.header__motto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__heading {
+  font-family: "Celias-Medium";
+  font-size: 2.4vw;
+  line-height: 125%;
+  text-align: center;
+  font-weight: 500;
+}
+.header__text {
+  font-family: "Celias-Regular";
+  font-size: 1.9vw;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 580px;
+  line-height: 125%;
+  font-weight: 400;
+}
+.header__logo {
+  position: relative;
+  left: 10px;
+  display: block;
+  max-width: 270px;
+  width: 37%;
+}
+.header__logo.header__logo--smaller {
+  left: 0;
+  max-width: 190px;
+  width: 28%;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    height: 450px;
+  }
+  .header__left {
+    display: none;
+  }
+  .header__mid {
+    align-items: flex-start;
+  }
+  .header__motto {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .header__text {
+    text-align: left;
+    font-size: 24px;
+  }
+  .header__heading {
+    text-align: left;
+    font-size: 30px;
+  }
+  .header__logo {
+    width: auto;
+  }
+  .header__logo.header__logo--smaller {
+    width: auto;
+  }
+  .header__img {
+    width: 100%;
+  }
+  .header__img.header__img-smaller {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .header__right {
+    display: none;
+  }
+  .header__mid {
+    width: 100%;
+    align-items: center;
+  }
+  .header__motto {
+    align-items: center;
+    text-align: center;
+  }
+  .header__text {
+    text-align: center;
+    font-size: 24px;
+  }
+  .header__heading {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .header {
+    height: 400px;
+  }
+}
+.photo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5vw;
+}
+.photo__img {
+  width: 35%;
+}
+.photo__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  text-align: center;
+  padding: 3vw 0 3vw 3vw;
+}
+.photo__text.photo__text--left {
+  padding: 3vw 3vw 3vw 0;
+}
+.photo__picture {
+  display: block;
+  width: 100%;
+}
+.photo__text-section {
+  margin-bottom: 35px;
+}
+.photo__text-section:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .photo {
+    padding: 5vw 2.5vw;
+    flex-wrap: wrap;
+  }
+  .photo__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .photo__text {
+    width: 100%;
+    padding: 0;
+  }
+  .photo__text.photo__text--left {
+    padding: 0;
+  }
+}
+.text {
+  font-family: "Celias-Regular";
+  font-size: 19px;
+  line-height: 180%;
+  font-weight: 400;
+  max-width: 800px;
+  text-align: center;
+}
+.text.text--header {
+  font-family: "Celias-Medium";
+  font-size: 19px;
+  font-weight: 500;
+}
+.text.text--heading {
+  font-family: "Celias-Medium";
+  font-size: 27px;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+.text.text--margin {
+  margin-top: 30px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw 2.5vw;
+}
+
+.remember {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 6vw 2.5vw 6vw 2.5vw;
+}
+.remember__inner {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+.remember__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 345px;
+  border: 1px solid #707070;
+  padding: 15px;
+  border-radius: 26px;
+  font-family: "Celias-Regular";
+  font-size: 19px;
+  line-height: 180%;
+  font-weight: 400;
+  max-width: 800px;
+  text-align: center;
+  transition: 0.8s;
+}
+.remember__item.remember__item--active {
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 35px -10px rgb(109, 108, 108);
+}
+.remember__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 1250px) {
+  .remember__inner {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
+  .remember__item {
+    width: 320px;
+    height: 140px;
+  }
+}
+.link {
+  border: 1px solid black;
+  background-color: black;
+  padding: 10px 30px;
+  color: white;
+  transition: 0.3s;
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+.link:hover {
+  background-color: transparent;
+  color: black;
+}
+
+@media (max-width: 680px) {
+  .link {
+    display: block;
+    margin-left: 0;
+    margin: 20px auto 20px auto;
+    width: 175px;
+  }
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 35px;
+}
+.boxes__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 195px;
+  border: 1px solid black;
+  border-radius: 26px;
+  background-color: transparent;
+}
+.boxes__box-img.logo {
+  position: relative;
+  left: 10px;
+  display: block;
+  width: 250px;
+}
+
+@media (max-width: 800px) {
+  .boxes {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=style.css.map */
